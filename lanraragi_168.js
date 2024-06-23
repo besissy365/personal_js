@@ -10,7 +10,7 @@ class LANraragi extends ComicSource {
 
     minAppVersion = "3.1.0"
 
-    host = "http://192.168.8.168:23000"
+    host = "192.168.8.168:23000"
 π
     // 更新链接
     url = "https://github.com/besissy365/personal_js/blob/main/lanraragi_168.js"
