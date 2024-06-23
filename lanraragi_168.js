@@ -26,7 +26,7 @@ class LANraragi extends ComicSource {
     account = {
         /// 登录
         /// 返回任意值表示登录成功
-        login: async (, ) => {
+        login: async (account, pwd) => {
             /*
             使用Network发起网络请求
             cookie相关数据将被自动保存
