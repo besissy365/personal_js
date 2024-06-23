@@ -23,43 +23,7 @@ class LANraragi extends ComicSource {
 
     /// 账号
     /// 设置为null禁用账号功能
-    account = {
-        /// 登录
-        /// 返回任意值表示登录成功
-        login: async (account, pwd) => {
-            /*
-            使用Network发起网络请求
-            cookie相关数据将被自动保存
-            其他数据需要使用`this.saveData`保存
-            ```
-            let res = await Network.post('https://example.com/login', {
-                'content-type': 'application/x-www-form-urlencoded;charset=utf-8'
-            }, `account=${account}&password=${pwd}`)
-
-            if(res.status == 200) {
-                let json = JSON.parse(res.body)
-                this.saveData('token', json.token)
-                return 'ok'
-            }
-
-            throw 'Failed to login'
-            ```
-            */
-
-        },
-
-        // 退出登录时将会调用此函数
-        logout: () => {
-            /*
-            ```
-            this.deleteData('token')
-            Network.deleteCookies('https://example.com')
-            ```
-            */
-        },
-
-        registerWebsite: "https://www.copymanga.site/web/login/loginByAccount"
-    }
+    account = null
 
     /// 探索页面
     /// 一个漫画源可以有多个探索页面
